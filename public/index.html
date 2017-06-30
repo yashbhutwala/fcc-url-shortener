@@ -1,98 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>URL Shortener Microservice - FreeCodeCamp</title>
-
-	<!-- BOOTSTRAP -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-	<!-- AWESOME ICONS -->
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-	<!-- FONT-STYLE -->
-	<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
-
-	<!-- OWN CSS -->
-	<link href="css/style.css" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <title>Timestamp Microservice</title>
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="Timestamp Microservice">
+  <meta name="author" content="Yash Bhutwala">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
-	<div class="container">
-
-		<div class="row">
-			<h1 class="text-center">
-				URL Shortener Microservice
-				<p class="lead">FreeCodeCamp</p>
-			</h1>
-		</div>
-
-		<div class="row">
-
-			<div class="col-xs-12 col-md-6 col-md-offset-3">
-
-				<!-- panel -->
-				<div class="panel panel-default">
-					<div class="panel-body">
-
-						<h3>Example Usage:</h3>
-
-						<dl>
-							<dt>Input</dt>
-							<dd>
-								<a href="/new/https://www.google.com" target="_blank">
-									<code>https://baby-url/new/https://www.google.com</code>
-								</a>
-							</dd>
-
-							<dt>Output</dt>
-							<dd>
-								<code>
-									{ "original_url": "https://www.google.com", "short_url": "https://baby-url/LNvrN" }
-								</code>
-							</dd>
-						</dl>
-
-					</div>
-				</div>
-				<!-- panel -->
-
-			</div>
-
-		</div>
-
-		<footer class="row">
-			<ul class="list-inline text-center">
-				<li>
-					<a href="mailto:ymb002@bucknell.edu" target="_blank">
-					<i class="fa fa-envelope fa-fw fa-2x animated tada" animate-infinite></i>
-      			</a>
-				</li>
-				<li>
-					<a href="https://www.linkedin.com/in/yashbhutwala" target="_blank">
-					<i class="fa fa-linkedin fa-fw fa-2x animated tada" animate-infinite></i>
-				</a>
-				</li>
-				<li>
-					<a href="https://github.com/yashbhutwala" target="_blank">
-					<i class="fa fa-github-alt fa-fw fa-2x animated tada" animate-infinite></i>
-				</a>
-				</li>
-				<li>
-					<a href="https://www.freecodecamp.com/yashbhutwala" target="_blank">
-					<i class="fa fa-free-code-camp fa-fw fa-2x animated tada" animate-infinite></i>
-				</a>
-				</li>
-			</ul>
-			<p class="text-muted text-center">Yash Bhutwala &copy; 2017</p>
-		</footer>
-	</div>
+  <div class="container-fluid">
+    <img src="https://avatars0.githubusercontent.com/yashbhutwala" alt="My Face" />
+    <p>
+      <a href="mailto:ymb002@bucknell.edu">
+        <i class="fa fa-envelope fa-fw"></i>
+      </a>
+      <a href="https://github.com/yashbhutwala" target="_blank">
+        <i class="fa fa-github fa-fw"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/yashbhutwala" target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </p>Created by Yash Bhutwala.
+    <h1 class="header">
+      FreeCodeCamp API Projects: Timestamp Microservice
+    </h1>
+    <blockquote>
+      User stories:
+      <ul>1) I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)</ul>
+      <ul>2) If it does, it returns both the Unix timestamp and the natural language form of that date.</ul>
+      <ul>3) If it does not contain a date or Unix timestamp, it returns null for those properties.</ul>
+    </blockquote>
+    <h3>Example usage:</h3>
+    <code>https://guarded-meadow-67841.herokuapp.com/December%2015,%202015</code>
+    <br>
+    <code>https://guarded-meadow-67841.herokuapp.com/1450137600</code>
+    <h3>Example output:</h3>
+    <code>
+      { "unix": 1450137600, "natural": "December 15, 2015" }
+    </code>
+  </div>
 </body>
 
 </html>
