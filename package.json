@@ -1,0 +1,30 @@
+{
+  "name": "fcc-url-shortener",
+  "version": "1.0.0",
+  "description": "FreeCodeCamp API Projects: URL Shortener Micro-service",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashbhutwala/fcc-url-shortener.git"
+  },
+  "keywords": [
+    "API",
+    "Yash Bhutwala",
+    "url-shortener"
+  ],
+  "author": "Yash Bhutwala",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yashbhutwala/fcc-url-shortener/issues"
+  },
+  "homepage": "https://github.com/yashbhutwala/fcc-url-shortener#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "mongoose": "^4.11.0",
+    "mongoose-auto-increment": "^5.0.1",
+    "valid-url": "^1.0.9"
+  }
+}
