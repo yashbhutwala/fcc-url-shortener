@@ -3,23 +3,24 @@
 This is an API created as part of [FCC's Back End Development Certification](https://www.freecodecamp.com/challenges/url-shortener-microservice) that receives a URL as a parameter and generates a shortened URL in the JSON response.
 
 ## User stories:
-1. I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.
-2. If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.
-3. When I visit that shortened URL, it will redirect me to my original link.
+
+1.  I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.
+2.  If I pass an invalid URL that doesn't follow the valid <http://www.example.com> format, the JSON response will contain an error instead.
+3.  When I visit that shortened URL, it will redirect me to my original link.
 
 ## Example creation usage:
 
-<https://little-url.herokuapp.com/new/https://www.google.com>
+<https://baby-url.herokuapp.com/new/https://www.google.com>
 
 ## Example creation output:
 
 ```js
-{"original_url":"https://www.google.com","short_url":"https://little-url.herokuapp.com/2871"}
+{"original_url":"https://www.google.com","short_url":"https://baby-url.herokuapp.com/2871"}
 ```
 
 ## Usage:
 
-<https://little-url.herokuapp.com/2871>
+<https://baby-url.herokuapp.com/2871>
 
 ## Will redirect to:
 

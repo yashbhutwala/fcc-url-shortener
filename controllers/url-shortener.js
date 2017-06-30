@@ -8,10 +8,9 @@ const hashIds = new HashIds(process.env.HASH_SALT, 6, 'abcdefghijklmnopqrstuvwxy
 function short(url, callback) {
     if (!urlValidator(url))
         return callback(new Error('Wrong url format, make sure you have a valid protocol and real site.'));
-  
     Url.findOne({ originalUrl: url}, (err, data) => {
         if (err) return callback(err);
-        
+
         if (data) {
             return callback(null, hashIds.encodeHex(data._id));
         }
